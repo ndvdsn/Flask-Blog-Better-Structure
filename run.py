@@ -1,4 +1,6 @@
-from flask_mvc import app
+from flask_mvc import create_app
+
+app = create_app()
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
