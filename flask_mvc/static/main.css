@@ -15,6 +15,16 @@ p.article-content {
 }
 
 
+
+/* .truncate {
+  color: red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75ch;
+} */
+
+
 .bg-steel {
   background-color: #5f788a;
 }
