@@ -36,10 +36,10 @@ class User(db.Model, UserMixin):
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
-    post_image = db.Column(db.String(20), nullable=False, default='post_default.jpg')
+    post_image = db.Column(db.String(20), nullable=False, default='cloud.jpg')
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     def __repr__(self):
-        return f"User('{self.title}', '{self.date_posted}', '{self.post_image}')"
+        return f"Post('{self.title}', '{self.date_posted}', '{self.post_image}')"
